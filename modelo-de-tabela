@@ -1,0 +1,24 @@
+Table Name: trx_sales_order
+
+Description: Represents a sales order transaction created by a customer. 
+
+Table Type: Transaction (trx_) 
+
+Domain: sales
+
+primary key - id - sales
+
+FK - id_sales_status - ref_sales_status
+
+main coluns:
+order_date
+total_amount
+created_at
+updated_at
+
+used by:
+backend api
+frontend
+reports
+
+notes: ordes are immutable after status = completed
