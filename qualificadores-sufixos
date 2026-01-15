@@ -1,0 +1,5 @@
+item - item de transação - txt_sales_order_item
+attachment - anexo - trx_sales_order_attachment
+status - status(referencia) - ref_sales_status
+type - tipo(referencia) - ref_person_type
+category - categoria - ref_product_category
