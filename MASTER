@@ -1,0 +1,16 @@
+master - dados mestres (fontes primárias)
+one-to-many
+entidades centrais do negócio 
+
+uuid
+
+pessoas:
+master_person
+master_person_address
+master_person_document
+ref_person_type
+rel_person_group
+
+estoque:
+master_warehouse
+master_product
