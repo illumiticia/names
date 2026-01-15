@@ -1,0 +1,11 @@
+relacionamentos MUITOS-para-MUITOS
+puramente associativas
+contem apenas FK e metadados
+não tem lógica de negócio
+
+exemplos:
+rel_user_role 
+rel_product_supplier 
+rel_person_group
+
+uuid
