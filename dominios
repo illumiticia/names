@@ -1,0 +1,14 @@
+person - pessoas (clientes, fornecedores, usuários)
+sales - vendas, pedidos, orçamentos 
+inventory - estoque e movimentações
+product - produtos, preços, categorias 
+financial - financeiro e pagamentos
+fiscal - fiscal, impostos, notas 
+user - usuários da aplicação 
+security - segurança e permissões 
+integration - integrações externas 
+
+Exemplos: 
+master_person_address 
+trx_inventory_movement 
+ref_sales_status 
