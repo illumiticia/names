@@ -1,0 +1,11 @@
+configurações de sistema e negócio
+controlam o comportamento da aplicação
+parâmetros, regras, notificações
+
+Exemplos: 
+cfg_system_parameter 
+cfg_sales_discount_rule 
+cfg_notification_template 
+
+integer (uuid em casos específicos)
+
