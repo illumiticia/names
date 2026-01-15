@@ -1,0 +1,22 @@
+aud - auditoria e histórico de alterações
+bigint
+exemplos:
+aud_master_person 
+aud_trx_sales_order 
+
+log – Logs Técnicos 
+bigint
+exemplos: 
+log_api_request 
+log_job_execution
+
+stg – Staging (Dados Brutos) 
+Exemplos: 
+stg_erp_person 
+stg_marketplace_order 
+
+etl_ – Controle de ETL 
+Exemplos: 
+etl_execution 
+etl_error 
+etl_queue 
