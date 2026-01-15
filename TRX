@@ -1,0 +1,28 @@
+transações, eventos e fatos
+eventos de negócios ocorridos ao longo do tempo
+existe carimbo de data/hora
+
+devem referenciar tabelas master e ref
+trx_sales_order 
+○ FK → master_person 
+○ FK → ref_sales_status 
+
+exemplos:
+trx_sales_order 
+trx_payment 
+trx_inventory_movement 
+trx_invoice
+
+trx_<event>_item - itens de transação
+são os detalhamentos da transação
+trx_sales_order_item 
+trx_invoice_item
+
+create table trx_appointment ( 
+id BIGINT generated always as identity primary key, 
+id_pet uuid not null, 
+id_appointment_status integer not null, 
+starts_at timestamptz not null, 
+ends_at timestamptz, 
+created_at timestamptz not null default now() 
+); 
