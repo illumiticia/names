@@ -1,0 +1,7 @@
+<prefix>_<domain>[_<subdomain>]_<entity>[_<qualifier>]
+
+prefix - master, txr, rel
+domain - person, sales, product (sobre o que é o dado)
+subdomain - ?
+entity - ?
+qualifier - item, address, contract, document, attachment, status, type, category (coisas)
