@@ -1,0 +1,19 @@
+Agenda “event-based” (agenda de eventos) - um feed de eventos, ordenado por tempo.
+O que é: uma visão unificada de tudo que ocupa tempo no calendário, como “blocos” com começo e fim.
+
+Exemplos de eventos:
+Agendamento (master_appointment) → “consulta marcada 10:00–10:30”
+Atendimento (master_attendance) → “atendimento ocorreu 10:05–10:40”
+Indisponibilidade do profissional → “férias 09:00–18:00”
+Indisponibilidade da unidade → “unidade fechada 14:00–17:00”
+
+O que ela responde bem:
+“Qual é a agenda do Dr. X hoje?”
+“O que está marcado nessa sala?”
+“O que está acontecendo agora?”
+“Quais eventos existem nessa unidade neste dia?”
+
+O que ela não resolve sozinha:
+“Quais horários estão livres para marcar?”
+Porque ela só mostra o que já existe, não gera opções.
+
