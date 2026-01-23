@@ -1,0 +1,36 @@
+Agenda “slot-based” (agenda de horários disponíveis)
+O que é: uma construção que gera slots (ex.: 15 min) dentro do horário de trabalho, e remove os slots ocupados.
+
+Pra isso você precisa de:
+
+Onde pode trabalhar:
+horário oficial da unidade (master_health_unit_operating_hours)
+jornada do profissional (master_professional_shift)
+
+O que bloqueia:
+indisponibilidades (profissional/unidade)
+agendamentos (master_appointment)
+atendimentos em aberto / em andamento (master_attendance, opcional)
+
+O que ela responde bem:
+“Quais horários o profissional tem livre amanhã?”
+“Quais horários livres nessa unidade entre 14:00 e 18:00?”
+“Dá pra encaixar um atendimento de 30 minutos hoje?”
+
+O que ela não resolve sozinha:
+“O que está marcado?” (até resolve indiretamente, mas não é o foco)
+Ela é para sugerir horários.
+
+Como se implementa (no seu modelo)
+
+Em passos:
+
+Pega o intervalo permitido (data + shift do profissional + operating hours da unidade).
+
+Gera slots com generate_series:
+09:00–12:00 vira 09:00–09:15, 09:15–09:30, ...
+Remove slots que colidem com:
+master_appointment (se tiver overlap, tira)
+master_professional_unavailability
+master_health_unit_unavailability
+O que sobra é “disponível”.
